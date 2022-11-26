@@ -16,7 +16,7 @@ spl_autoload_register(function ($class) {
 
     }
 
-    $db=Database::connect(Config::$config);
+    $db=Database::connect($config);
     $load_new=new HomeController();
     $model=new HomeModel();
     $load_new->model=$model;
