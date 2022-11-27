@@ -20,8 +20,10 @@ spl_autoload_register(function ($class) {
     }
 });
 
+
+
 $db=Connection::connect($config);
-var_dump($db);
+
 $load_new=new HomeController();
 $model=new HomeModel();
 $load_new->model=$model;
