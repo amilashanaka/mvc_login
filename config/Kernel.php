@@ -26,5 +26,6 @@ $db=Connection::connect($config);
 
 $load_new=new HomeController();
 $model=new HomeModel();
+$model->db=$db;
 $load_new->model=$model;
 $index=$load_new->indexAction();
