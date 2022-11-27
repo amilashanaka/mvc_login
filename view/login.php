@@ -23,7 +23,7 @@
 
                     <div id="login-box" class="class col-md-12">
 
-                    <from id="login-form" class="form" action="" method="post">
+                    <form action="" method="post">
                         <h3 class="class txt-center txt-info">Login</h3>
                         <div class="class form-group">
                             <label for="username" class="txt-info">User Name :</label>
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="class form-group">
-                            <input type="submit"  name="login_submit" class="btn btn-info btn-md" value="submit"/>
+                            <input type="submit"  name="login_submit" class="btn btn-info btn-md" value="submit">
                         </div>
 
                         <div id="reg_link" class="text-right">

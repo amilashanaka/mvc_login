@@ -1,9 +1,9 @@
 <?php
 
-session_start();
+
 
 include_once 'config.php';
-include_once 'Database.php';
+include_once 'Connection.php';
 
 spl_autoload_register(function ($class) {
 
@@ -20,7 +20,8 @@ spl_autoload_register(function ($class) {
     }
 });
 
-$db=Database::connect($config);
+$db=Connection::connect($config);
+var_dump($db);
 $load_new=new HomeController();
 $model=new HomeModel();
 $load_new->model=$model;

@@ -1,23 +1,25 @@
 <?php
-
+session_start();
 
 class HomeController{
     public $model;
 
+
     public function indexAction(){
 
-        var_dump($_REQUEST);
+   
  
 
         if(isset($_POST['login_submit'])){
 
-         
+          
             
 
             $username = $_POST['username'];
             $password = $_POST['password'];
-
+            var_dump("hi..".$password);
             $checkUserLogin = $this->model->checkUserLogin($username, $password);
+           
             if($checkUserLogin==1){
                 $_SESSION['userLogin']=1;
             }
