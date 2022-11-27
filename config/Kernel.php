@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 include_once 'config.php';
 include_once 'Database.php';
 
@@ -15,13 +18,10 @@ spl_autoload_register(function ($class) {
         require 'model/'.$class.'.php';
 
     }
-
-    $db=Database::connect($config);
-    $load_new=new HomeController();
-    $model=new HomeModel();
-    $load_new->model=$model;
-    $index->$load_new->indexAction();
-
-
-
 });
+
+$db=Database::connect($config);
+$load_new=new HomeController();
+$model=new HomeModel();
+$load_new->model=$model;
+$index=$load_new->indexAction();

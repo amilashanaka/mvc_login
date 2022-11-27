@@ -1,12 +1,18 @@
 <?php
-session_start();
+
 
 class HomeController{
     public $model;
 
     public function indexAction(){
 
-        if(isset($_POST['LoginSubmit'])){
+        var_dump($_REQUEST);
+ 
+
+        if(isset($_POST['login_submit'])){
+
+         
+            
 
             $username = $_POST['username'];
             $password = $_POST['password'];
@@ -18,6 +24,8 @@ class HomeController{
         }
 
         $this->routeManager();
+
+    
 
     }
 

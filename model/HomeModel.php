@@ -5,7 +5,7 @@ class HomeModel{
 
     public function checkUserLogin($username,$password){
 
-        $querry="SElECT * FROM users  WHERE username='{$username}' AND password='{$password}'";
+        $querry="SElECT count(id) FROM user_tbl  WHERE username='{$username}' AND password='{$password}'";
         $stmt=$this->db->prepare($querry)->execute();
         return $stmt;
 

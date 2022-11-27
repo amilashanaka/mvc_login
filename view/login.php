@@ -23,10 +23,10 @@
 
                     <div id="login-box" class="class col-md-12">
 
-                    <from id="login-form" class="form"  method="post">
+                    <from id="login-form" class="form" action="" method="post">
                         <h3 class="class txt-center txt-info">Login</h3>
                         <div class="class form-group">
-                            <lable for="username" class="txt-info">User Name :</lable>
+                            <label for="username" class="txt-info">User Name :</label>
                             <input type="text" name="username" class="form-control" id="username">
 
 
@@ -34,7 +34,7 @@
                         </div>
 
                         <div class="class form-group">
-                            <lable for="username" class="txt-info">Password :</lable>
+                            <label for="username" class="txt-info">Password :</label>
                             <input type="text" name="password" class="form-control" id="password">
 
 
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="class form-group">
-                            <input type="submit" name="login_submit" class="btn btn-info" value="submit">
+                            <input type="submit"  name="login_submit" class="btn btn-info btn-md" value="submit"/>
                         </div>
 
                         <div id="reg_link" class="text-right">
